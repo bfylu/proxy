@@ -16,9 +16,11 @@ public class CGLibProxy implements MethodInterceptor {
     private CGLibProxy() {
 
     }
+
     public static CGLibProxy getInstance(){
         return instance;
     }
+
     @SuppressWarnings("unchecked")
     public <T> T getProxy(Class<T> cls){
         return (T) Enhancer.create(cls, this);

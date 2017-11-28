@@ -11,14 +11,15 @@
     <context:component-scan base-package="cn.unicyz.proxy.spring_aop"/>
 
     <bean id="greetingProxy" class="cn.unicyz.proxy.spring_aop.ProxyFactoryBean">
+        <!--
         <property name="interfaces" value="cn.unicyz.proxy.spring_aop.Greeting"/>
-
         <property name="target" ref="greetingImpl"/>
         <property name="interceptorNames">
             <list>
                 <value>greetingAro</value>
             </list>
         </property>
+        -->
     </bean>
 
 
